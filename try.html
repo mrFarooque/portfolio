@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        border: 1px solid seagreen;
+        display: flex;
+        justify-content: space-between;
+      }
+      .navlogo {
+        font-size: 20px;
+      }
+      .navlinks {
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        margin-right: 2%;
+        width: 30%;
+        margin: 0;
+      }
+      .nav-toggle {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        display: none;
+      }
+      .nav-toggle i {
+        font-size: 24px;
+      }
+      .navlinks ul {
+        /* border: 1px solid saddlebrown; */
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .navlinks li {
+        margin: 3%;
+        font-size: large;
+      }
+      @media (max-width: 800px) {
+        .nav-toggle {
+          display: inline;
+        }
+
+        .navbar {
+          flex-direction: column;
+        }
+        .navlinks {
+          /* display: none; */
+          width: 100%;
+          text-align: center;
+          /* transform: translateY(85px); */
+          transition: transform 1s;
+          position: absolute;
+          top: -200px;
+        }
+        .navlinksGo {
+          /* display: none; */
+          width: 100%;
+          text-align: center;
+          transform: translateY(300px);
+        }
+        .navlinks ul {
+          display: block;
+        }
+
+        .navlinks li {
+          margin: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navlogo"><h1>Farooque</h1></div>
+      <div class="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navlinks navlinksGo">
+        <ul>
+          <li>ABOUT</li>
+          <li>SKILLS</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/7e4208235c.js"
+  crossorigin="anonymous"
+></script>
+<script>
+  var togglebtn = document.querySelector(".nav-toggle");
+  var toggleClick = 0;
+  togglebtn.addEventListener("click", toggleFunction);
+  function toggleFunction() {
+    document.querySelector(".navlinks").classList.toggle("navlinksGo");
+    // toggleClick++;
+    // var links = document.querySelector(".navlinks");
+    // if (toggleClick % 2 == 1) {
+    //   links.style.display = "flex";
+    // } else {
+    //   links.style.display = "none";
+    // }
+  }
+</script>

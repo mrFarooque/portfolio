@@ -1,0 +1,787 @@
+body {
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+}
+#navbar {
+  /* border: 1px solid green; */
+  /* background-color: transparent; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+.scrolled {
+  box-shadow: rgba(40, 40, 40, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #2e2e2e;
+}
+.logo {
+  color: white;
+}
+.logo:hover {
+  color: black;
+}
+#navbar > div:first-child {
+  /* border: 1px solid brown; */
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-links {
+  /* border: 1px solid brown; */
+  width: 55%;
+  display: flex;
+  /* background-color: #007266; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+#lightbtn {
+  border: 0;
+  background-color: transparent;
+}
+#navbar i,
+#navbar h3,
+#navbar a {
+  font-size: 18.72px;
+  color: white;
+  text-decoration: none;
+}
+#navbar i:hover,
+#navbar h3:hover {
+  /* color: black; */
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+.nav-toggle {
+  position: absolute;
+  right: 10%;
+  top: 13px;
+  display: none;
+}
+
+#farooque {
+  /* border: 1px solid saddlebrown; */
+  /* background-color: #45c5b8; */
+  background-color: #007266;
+  /* background-color: #2e2e2e; */
+  height: 100vh;
+  display: flex;
+}
+#farooque > .content {
+  /* border: 1px solid black; */
+  /* background-color: white; */
+  height: 300px;
+  width: 800px;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.display-1 {
+  color: white;
+  font-size: 5rem;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+.typist {
+  color: white;
+  font-size: 22px;
+  margin-top: 0;
+  font-weight: 300;
+  line-height: 1.2;
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.all-links {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid black; */
+  height: 100px;
+  width: 25%;
+  margin: auto;
+}
+.all-links > a {
+  margin: 10px;
+  color: white;
+}
+.all-links > a:hover {
+  color: black;
+}
+
+.resume {
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  height: 57px;
+  width: 21%;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume:hover {
+  /* border: 1px solid black; */
+  background-color: white;
+  color: #2e2e2e;
+}
+.resume h3 {
+  font-size: 22px;
+}
+.resume-link {
+  text-decoration: none;
+}
+#about {
+  /* border: 1px solid saddlebrown; */
+  /* background-color: rgb(207, 207, 207); */
+  background-color: rgb(228, 228, 228);
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-box {
+  /* border: 1px solid black; */
+  height: 390px;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-box img {
+  height: 75%;
+  width: 30%;
+  border-radius: 100%;
+}
+.about-box > div {
+  /* border: 1px solid rebeccapurple; */
+  width: 52%;
+  text-align: center;
+}
+.about-box h2 {
+  color: #007266;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 2%;
+}
+.about-box p {
+  margin: 0;
+  margin-bottom: 2%;
+  font-size: 19px;
+  color: rgb(50, 50, 50);
+}
+.information {
+  /* border: 1px solid black; */
+  color: rgb(50, 50, 50);
+  height: 40px;
+  width: 100%;
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* skills */
+#skills {
+  background-color: #007266;
+  /* border: 1px solid black; */
+  height: 100vh;
+}
+#skills > div:nth-child(1) {
+  text-align: center;
+  /* border: 1px solid black; */
+  color: white;
+  padding-top: 8%;
+}
+#skills > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+#skills > div:nth-child(2) > div > div {
+  transition: all 500ms;
+  padding: 0;
+  width: 60%;
+  margin: auto;
+  margin-top: 3%;
+}
+#skills > div:nth-child(2) > div > div div {
+  transition: all 500ms;
+  padding: 0;
+  margin: auto;
+  height: 45px;
+  width: 50%;
+}
+
+#skills > div:nth-child(2) > div > div:hover {
+  transform: scale(1.1);
+}
+
+#skills > div:nth-child(3) > div > div > div {
+  transition: all 500ms;
+  padding: 0;
+  margin: auto;
+  height: 45px;
+}
+#skills > div:nth-child(3) > div > div {
+  transition: all 500ms;
+  padding: 0;
+}
+
+.front-end {
+  /* background-color: white; */
+  /* border: 1px solid black; */
+  height: auto;
+  width: 35%;
+  color: #2e2e2e;
+  text-align: center;
+}
+.front-end h2 {
+  color: white;
+}
+.front-end div {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 11rem;
+  border-radius: 0.5rem;
+  /* box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15); */
+  /* box-shadow: rgba(255, 254, 254, 0.17) 0px 54px 55px,
+    rgba(255, 255, 255, 0.112) 0px -12px 30px,
+    rgba(255, 255, 255, 0.061) 0px 4px 6px,
+    hsla(0, 100%, 100%, 0.112) 0px 12px 13px,
+    rgba(255, 255, 255, 0.139) 0px -3px 5px; */
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+#skills i {
+  font-size: 29px;
+  margin-right: 20px;
+}
+.back-end {
+  /* background-color: white; */
+  /* border: 1px solid black; */
+  height: auto;
+  width: 35%;
+  color: #2e2e2e;
+  text-align: center;
+}
+.back-end h2 {
+  color: white;
+}
+.back-end div {
+  display: flex;
+
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 11rem;
+  border-radius: 0.5rem;
+  /* box-shadow: rgba(255, 254, 254, 0.17) 0px 54px 55px,
+    rgba(255, 255, 255, 0.112) 0px -12px 30px,
+    rgba(255, 255, 255, 0.061) 0px 4px 6px,
+    hsla(0, 100%, 100%, 0.112) 0px 12px 13px,
+    rgba(255, 255, 255, 0.139) 0px -3px 5px; */
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+/* projects */
+#projects {
+  height: 180vh;
+  background-color: rgb(214, 214, 214);
+}
+.pro_1_div {
+  text-align: center;
+  padding-top: 5%;
+}
+.pro_1_div > h2 {
+  margin: 0;
+  margin-top: 1%;
+  color: #007266;
+  font-size: 28px;
+}
+
+.pro_2_div {
+  /* border: 1px solid black; */
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+.pro_2_div > div {
+  /* border: 1px solid black; */
+  background-color: rgb(34, 34, 34);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 20px;
+  /* height: 340px; */
+  height: auto;
+  width: 75%;
+  margin: auto;
+  margin-top: 3%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.pro_2_div > div:nth-child(2) {
+  margin-top: 8%;
+}
+.project-img {
+  width: 62%;
+  border-radius: 20px;
+}
+.overlay {
+  transition: 0.5s ease;
+  transform: scale(100px, 100px);
+}
+.overlay:hover {
+  transform: scale(1.1, 1.1);
+  cursor: zoom-in;
+}
+
+.project-about {
+  /* border: 1px solid black; */
+  color: white;
+  width: 35%;
+  padding: 1%;
+  text-align: left;
+  padding-left: 10px;
+  font-size: small;
+}
+.project-title {
+  background-color: #007266;
+  text-align: center;
+}
+.project-title h3 {
+  margin: 0;
+  font-size: 19px;
+}
+.project-desc {
+  /* border: 1px solid white; */
+  height: auto;
+  margin-top: 12%;
+  font-size: 15px;
+}
+.project-techstack {
+  /* border: 1px solid white; */
+  margin: 0;
+}
+.project-techstack h4 {
+  margin: 0;
+}
+.project-links {
+  /* border: 1px solid white; */
+  height: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-links > a {
+  /* border: 1px solid white; */
+  height: 30px;
+  width: 40%;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+
+.project-links > a > div:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* footer */
+#footer {
+  background-color: #007266;
+  height: 34vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+#footer h2 {
+  margin-top: 0;
+  margin-bottom: 1%;
+  padding-top: 3%;
+  font-size: 34px;
+}
+
+#footer .links {
+  /* border: 1px solid white; */
+  text-align: center;
+}
+#footer .links a {
+  /* border: 1px solid white; */
+  font-size: 45px;
+  margin-left: 3%;
+  margin-right: 3%;
+  color: black;
+}
+#footer .links a :hover {
+  color: white;
+}
+#footer > p {
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+}
+.name {
+  font-size: 20px;
+  color: white;
+  margin-left: 1%;
+}
+/* MEDIA QUERIES */
+@media (max-width: 710px) {
+  .nav-toggle {
+    display: inline;
+  }
+  #navbar {
+    display: block;
+    width: 100%;
+  }
+  .nav-links {
+    /* border: 1px solid seagreen; */
+    display: block;
+    /* display: none; */
+    width: 100%;
+    text-align: center;
+    background-color: #2e2e2e;
+    position: absolute;
+    top: 50px;
+    transition: transform 0.5s ease-in;
+  }
+  .nav-linksGo {
+    /* display: none; */
+    transform: translateY(-225px);
+  }
+  .nav-links h3 {
+    margin: 1%;
+  }
+  .nav-links h3:first-child {
+    margin-top: 0;
+  }
+
+  /* Farooque sectoin 1st section */
+  .display-1 {
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+  }
+  .typist {
+    color: white;
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+  }
+  #skills > div:nth-child(1) {
+    padding-top: 2%;
+  }
+  #skills > div:nth-child(2) {
+    display: block;
+  }
+  #skills > div:nth-child(2) > div > div div {
+    font-size: 18px;
+  }
+  .front-end {
+    width: 100%;
+  }
+  .front-end h2 {
+    text-align: center;
+  }
+  .back-end {
+    width: 100%;
+  }
+
+  .back-end h2 {
+    text-align: center;
+  }
+  .front-end > div {
+    display: block;
+    padding: 0;
+  }
+  .project-title h3 {
+    font-size: 15px;
+    margin-top: 3%;
+  }
+  #projects {
+    height: 210vh;
+    background-color: rgb(214, 214, 214);
+  }
+  .project-img {
+    width: 95%;
+    margin: 0%;
+    margin-top: 3%;
+  }
+  .project-about {
+    width: 95%;
+    margin: auto;
+  }
+  .project-desc {
+    font-size: 13px;
+    height: auto;
+    margin-top: 0;
+  }
+  .project-techstack h4 {
+    font-size: 13px;
+  }
+  .pro_2_div {
+    width: 100%;
+  }
+  .pro_2_div > div {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .project-links > a {
+    font-size: 13px;
+  }
+  .about-box {
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .about-box h2 {
+    font-size: 25px;
+  }
+  .about-box img {
+    width: 50%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  .about-box > div {
+    width: 80%;
+    margin: auto;
+  }
+  .about-box p {
+    font-size: 15px;
+  }
+  .information {
+    /* display: none; */
+    font-size: 13px;
+  }
+}
+
+/* mobile phones */
+@media (max-width: 640px) {
+  .nav-toggle {
+    display: inline;
+  }
+  #navbar {
+    display: block;
+  }
+  #navbar h3 {
+    font-size: 14px;
+  }
+  .nav-links {
+    /* border: 1px solid seagreen; */
+    display: block;
+    /* display: none; */
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    position: absolute;
+    top: 50px;
+    transition: transform 0.5s ease-in;
+  }
+  .nav-linksGo {
+    /* display: none; */
+    transform: translateY(-225px);
+  }
+  .nav-links h3 {
+    margin: 1%;
+  }
+  .nav-links h3:first-child {
+    margin-top: 0;
+  }
+
+  /* Farooque sectoin 1st section */
+  .display-1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+  }
+  .typist {
+    color: white;
+    font-size: 12px;
+    margin-top: 0;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+      Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  #navbar i {
+    color: white;
+  }
+  .resume h3 {
+    font-size: 16px;
+  }
+  #farooque > .content {
+    margin-top: 50%;
+  }
+  .about-box {
+    /* border: 1px solid black; */
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .about-box h2 {
+    font-size: 25px;
+  }
+  .about-box img {
+    width: 50%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  .about-box > div {
+    width: 80%;
+    margin: auto;
+  }
+  .about-box p {
+    font-size: 14px;
+  }
+  .information {
+    /* display: none; */
+    font-size: 10px;
+  }
+
+  #skills > div:nth-child(2) {
+    display: block;
+  }
+  #skills > div:nth-child(2) > div > div div {
+    font-size: 12px;
+  }
+  .front-end {
+    width: 100%;
+  }
+  .front-end h2 {
+    text-align: center;
+  }
+  .back-end {
+    width: 100%;
+  }
+
+  .back-end h2 {
+    text-align: center;
+  }
+  .front-end > div {
+    display: block;
+    padding: 0;
+  }
+  #footer h2 {
+    font-size: 2rem;
+    padding-top: 10%;
+  }
+  #footer p {
+    font-size: 10px;
+  }
+  .links p {
+    font-size: 12px;
+  }
+  .links i {
+    font-size: 30px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .project-title h3 {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #projects {
+    height: 140vh;
+    background-color: rgb(214, 214, 214);
+  }
+
+  .project-img {
+    width: 53%;
+    height: 50%;
+    margin-top: 85px;
+  }
+  .project-about {
+    width: 43%;
+  }
+  .project-desc {
+    font-size: 10px;
+    height: auto;
+  }
+  .project-techstack h4 {
+    font-size: 10px;
+  }
+  .pro_2_div {
+    width: 100%;
+  }
+  .pro_2_div > div {
+    width: 90%;
+  }
+  .project-links > a {
+    font-size: 15px;
+    margin-top: 20%;
+  }
+
+  /* copied from above */
+  #projects {
+    height: 210vh;
+    background-color: rgb(214, 214, 214);
+  }
+  .project-img {
+    width: 95%;
+    margin: 0;
+    margin-top: 5%;
+  }
+  .project-about {
+    width: 95%;
+    margin: auto;
+  }
+  .project-desc {
+    font-size: 13px;
+    height: auto;
+    margin-top: 0;
+  }
+  .project-techstack h4 {
+    font-size: 13px;
+  }
+  .pro_2_div {
+    width: 100%;
+  }
+  .pro_2_div > div {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+}
