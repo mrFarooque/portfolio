@@ -150,6 +150,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.about-me-txt {
+  position: absolute;
+  top: 5%;
+  color: #007266;
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 2%;
+}
+.hi {
+  color: #2e2e2e;
+  font-size: 24px;
 }
 .about-box {
   /* border: 1px solid black; */
@@ -172,15 +185,20 @@ body {
 }
 .about-box h2 {
   color: #007266;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   margin-bottom: 2%;
+  text-align: justify;
 }
 .about-box p {
   margin: 0;
   margin-bottom: 2%;
   font-size: 19px;
   color: rgb(50, 50, 50);
+  text-align: justify;
+}
+.about-box i {
+  color: #007266;
 }
 .information {
   /* border: 1px solid black; */
@@ -296,6 +314,9 @@ body {
     rgba(255, 255, 255, 0.139) 0px -3px 5px; */
   margin-bottom: 5%;
   font-size: 20px;
+}
+.back-end div > img {
+  width: 100%;
 }
 /* projects */
 #projects {
