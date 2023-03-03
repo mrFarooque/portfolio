@@ -11,22 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="./calendar.css"
+/>
   </head>
   <body>
     <div id="navbar">
       <div>
-        <h3 class="logo">< Farooque /></h3>
+        <h3 class="logo lead">< Farooque /></h3>
       </div>
       <div class="nav-toggle"><i class="fa-solid fa-bars"></i></div>
       <div class="nav-links nav-linksGo">
-        <a href="#farooque" target="_self"> <h3>Home</h3> </a>
-        <a href="#about" target="_self"> <h3>About</h3></a>
-        <a href="#skills" target="_self"><h3>Skills</h3></a>
-        <a href="#projects" target="_self"><h3>Projects</h3></a>
-        <button id="lightbtn"><i class="fa-solid fa-moon"></i></button>
+        <a href="#farooque" target="_self"> <h3 class="lead">Home</h3> </a>
+        <a href="#about" target="_self"> <h3 class="lead">About</h3></a>
+        <a href="#skills" target="_self"><h3 class="lead">Skills</h3></a>
+        <a href="#projects" target="_self"><h3 class="lead">Projects</h3></a>
+        <a href="#footer" target="_self"><h3 class="lead">Contacts</h3></a>
+        <!-- <button id="lightbtn"><i class="fa-solid fa-moon lead"></i></button> -->
       </div>
     </div>
-    <div id="farooque">
+    <div id="farooque" class="bgstyle">
       <div class="content">
         <h1 class="display-1">MD Farooque Ansari</h1>
         <p class="typist">
@@ -54,7 +60,7 @@
             aria-label="My Mail"
             ><i class="fa-solid fa-envelope fa-3x"></i></a>
         </div>
-        <a class="resume-link" target="_blank" href="https://drive.google.com/file/d/1Yllhlv5dFNQfI0RuAoRcrrP5L9cY4PXd/view?usp=sharing"><div class="resume">
+        <a class="resume-link" target="_blank" href="./download/MD_Farooque_Ansari_Resume.pdf" download><div class="resume">
           <h3>Resume</h3>
         </div></a>
       </div>
@@ -71,39 +77,87 @@
             and maintaining web applications. Looking forward to joining a
             progressive and challenging work environment.
           </p>
-          <div class="information">
-            <div><i class="fa-solid fa-location-dot"></i> Assam</div>
-            <div><i class="fa-solid fa-phone"></i> 9101425096</div>
-            <div>
+          <!-- <div class="information">
+            <div class="information-content"><i class="fa-solid fa-location-dot"></i> Assam</div>
+            <div class="information-content"><i class="fa-solid fa-phone"></i> 9101425096</div>
+            <div class="information-content">
               <i class="fa-solid fa-envelope"></i> farooqueansari85@gmail.com
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
     <!-- skills -->
     <div id="skills">
-      <div><h1>Skills</h1></div>
+      <div><h1 class="titles fontWhite">Skills</h1></div>
       <div>
         <div class="front-end">
           <h2>Front-end Skills</h2>
-          <div><div><i class="fa-brands fa-html5"></i>HTML 5</div></div>
-          <div><div><i class="fa-brands fa-css3"></i>CSS 3</div></div>
-          <div><div><i class="fa-brands fa-square-js"></i>JAVASCRIPT</div></div>
+          <div><div><img src="./images/icons/html.jpg" alt="">HTML 5</div></div>
+          <div><div><img src="./images/icons/css.png" alt="">CSS 3</div></div>
+          <div><div><img src="./images/icons/js.jpg" alt=""></i>JAVASCRIPT</div></div>
         </div>
         <div class="back-end">
           <h2>Back-end Skills</h2>
-          <div><div><i class="fa-brands fa-java"></i>JAVA</div></div>
-          <div><div><i class="fa-solid fa-database"></i>MySQL</div></div>
-          <div><div><i class="fa-brands fa-aws"></i>AWS</div></div>
+          <div><div><img src="./images/icons/java.jpg" alt="">JAVA</div></div>
+          <div><div><img src="./images/icons/mysql.png" alt=""></i>MySQL</div></div>
+          <div><div><img src="./images/icons/hibernate logo.png" alt="">Hibernate</div></div>
+          <div><div><img src="./images/icons/spring.png" alt="">Spring</div></div>
           
         </div>
       </div>
     </div>
     <!-- projects -->
     <div id="projects">
-      <div class="pro_1_div"><h2>Projects</h2></div>
+      <div class="pro_1_div"><h2 class="titles">Projects</h2></div>
       <div class="pro_2_div">
+        <div class="project1">
+          <img class="project-img overlay" src="https://github.com/mrFarooque/OnlineShopping/blob/main/Images/userHome.png?raw=true" alt="" />
+          <div class="project-about">
+            <div class="project-title"><h3>Online Shopping App</h3></div>
+            <div class="project-desc">
+              <p>
+                A spring boot project where as a user you can add products to your cart and buy them online 
+                and as an admin you can manage your products and its categories.
+                <br> This app performs all the fundamental CRUD operations.
+                <!-- <br> <br> Areas of Responsibility - <br>
+                • Team Lead <br>
+                • Entity Relationship <br>
+                • Developed admin service layer, the controller layer. <br> -->
+              </p>
+            </div>
+            <div class="project-techstack">
+              <h4>Tech Stack : Java | Spring Boot | MySql </h4>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mrFarooque/OnlineShopping" target="_blank"><div><i class="fa-brands fa-github"></i> Code</div></a>
+              <a href="https://drive.google.com/file/d/1JtLjAILQPM61L-zBG1wPKruVXBbWuE2q/view?usp=sharing" target="_blank"><div><i class="fa-solid fa-eye"></i> Video</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="project1">
+          <img class="project-img overlay" src="./images/Tours-and-Travel-Management-System.jpg" alt="" />
+          <div class="project-about">
+            <div class="project-title"><h3>Trip Management System</h3></div>
+            <div class="project-desc">
+              <p>
+                A RESTful based web-services for Trip Management System, performing all the CRUD operations with validation at every step.
+                <br> A collaborative project built by a team of 5 executed in 5 days.
+                <!-- <br> <br> Areas of Responsibility - <br>
+                • Team Lead <br>
+                • Entity Relationship <br>
+                • Developed admin service layer, the controller layer. <br> -->
+              </p>
+            </div>
+            <div class="project-techstack">
+              <h4>Tech Stack : Java | Spring Boot | MySql </h4>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mrFarooque/Trip-Management-System" target="_blank"><div><i class="fa-brands fa-github"></i> Code</div></a>
+              <a href="https://drive.google.com/file/d/17jqqBja16rYwgb1lh2VrC2gNYshfZojM/view?usp=sharing" target="_blank"><div><i class="fa-solid fa-eye"></i> Video</div></a>
+            </div>
+          </div>
+        </div>
         <div class="project1">
           <img class="project-img overlay" src="./images/project1.png" alt="" />
           <div class="project-about">
@@ -119,7 +173,7 @@
               <h4>Tech Stack : HTML | CSS | JavaScript</h4>
             </div>
             <div class="project-links">
-              <a href="https://github.com/RohitSawant0351/TATA-1mg-Project" target="_blank"><div><i class="fa-brands fa-github"></i> Code</div></a>
+              <a href="https://github.com/mrFarooque/TATA-1mg" target="_blank"><div><i class="fa-brands fa-github"></i> Code</div></a>
               <a href="https://tata1mg-clone.netlify.app/" target="_blank"><div><i class="fa-solid fa-eye"></i> Live</div></a>
             </div>
           </div>
@@ -131,10 +185,12 @@
             <div class="project-desc">
               <p>
                 Hindustan Times is a news website.
-                <p>As it is group project my contributions are
-                  <p>-Sidebars</p>
-                  <p>-Weather Api</p>
-                  <p>-Section where user can edit there profile like change their image,password,etc.</p>
+                <p>A collaborative project built by a team of 5 executed in 5 days.
+                  <br>Here I worked on the Sidebars, Weather Api and made connection among all the pages.
+                  <!-- <br> Areas of Responsibility - <br>
+                • Sidebars <br>
+                • Weather Api <br>
+                • Section where user can edit there profile like change their image,password,etc. <br> -->
                 </p>
               </p>
               <p></p>
@@ -151,13 +207,26 @@
         </div>
       </div>
     </div>
+
+    <div id="github">
+          <!-- Prepare a container for your calendar. -->
+
+    <h2 class="code">Days I Code</h2>
+    <div class="calendar">
+      Loading stuff
+      Loading the data just for you.
+    </div>
+    </div> 
+
     <!-- footer -->
     <div id="footer">
-      <h2>Get In Touch</h2>
-      <div class="links">
+      <h2 class="titles fontWhite">Get In Touch</h2>
+      <div class="links">   
         <a target="_blank" href="https://www.linkedin.com/in/mdfarooque786/"><i class="fa-brands fa-linkedin"></i></a>
         <a target="_blank" href="mailto:farooqueansari85@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a target="_blank" href="https://github.com/mrFarooque"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="tel:9101425096"><i class="fa-solid fa-phone"></i></a>
+        <!-- <div id="call"><i class="fa-solid fa-phone"></i><i>+91-9101425096</i></div> -->
       </div>
       <p>Designed and build by <span class="name">MD Farooque Ansari.</span></p>
     </div>
@@ -168,3 +237,22 @@
   crossorigin="anonymous"
 ></script>
 <script src="report.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+
+
+
+<script>
+  GitHubCalendar(".calendar", "mrFarooque");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "mrFarooque", { responsive: true });
+
+  // // Use a proxy
+  // GitHubCalendar(".calendar", "mrFarooque", {
+  //    proxy (mrFarooque) {
+  //      return fetch(`https://your-proxy.com/github?user=${mrFarooque}`)
+  //    }
+  // }).then(r => r.text())
+</script>
